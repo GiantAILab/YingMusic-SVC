@@ -119,19 +119,15 @@ We provide a **graded difficulty benchmark**, derived from 100+ multi-track stud
 - [ ] develop gradio app for YingMusic-SVC
 - [ ] benchmark one-click eval script
 
+---
 
+## Acknowledgements 🙏  
 
-[//]: # (## Acknowledgements 🙏  )
+This project is built upon:
 
-[//]: # (This project is built upon:)
-
-[//]: # (- Seed-VC &#40;DiT + Flow Matching&#41;)
+- [Seed-VC](https://github.com/Plachtaa/seed-vc)
 
 [//]: # (- BigVGAN Vocoder  )
-
-[//]: # (- FireRedASR  )
-
-[//]: # (- Audiobox Aesthetics  )
 
 [//]: # ()
 [//]: # (---)
