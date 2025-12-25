@@ -95,7 +95,10 @@ def load_models_api(args, device=torch.device("cuda")):
         bigvgan_name = model_params.vocoder.name
 
         bigvgan_model = bigvgan.BigVGAN.from_pretrained(bigvgan_name, use_cuda_kernel=False)
-        bigvgan_model = bigvgan.BigVGAN.from_pretrained(bigvgan_cache, use_cuda_kernel=False)
+
+        #bigvgan_cache is not defined, and hence causing not defined error
+        #bigvgan_model = bigvgan.BigVGAN.from_pretrained(bigvgan_cache, use_cuda_kernel=False) 
+
         # remove weight norm in the model and set to eval mode
         bigvgan_model.remove_weight_norm()
         bigvgan_model = bigvgan_model.eval().to(device)
